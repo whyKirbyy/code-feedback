@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report from SSL Code
+    url: https://github.com/swisssoftwarelaboratory/code-feedback#ssl-code-feedback
+    about: Click "Report a problem" in SSL Code. It attaches the thread and diagnostics for you.

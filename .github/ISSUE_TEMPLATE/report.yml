@@ -1,0 +1,31 @@
+name: Report a problem
+description: Something went wrong in a chat or in SSL Code itself.
+title: "[SSL Code] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports are public. The easiest way to file one is **Report a problem** in SSL Code, which attaches the context for you.
+        Start the title with `[Chat]` for a problem with how an agent worked in a thread, or `[SSL Code]` for a problem with the app itself.
+  - type: textarea
+    id: expected
+    attributes:
+      label: What I expected
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag an image in here.
+  - type: input
+    id: version
+    attributes:
+      label: Version and OS
+      placeholder: SSL Code 1.2.3, macOS 26.1 (arm64)
