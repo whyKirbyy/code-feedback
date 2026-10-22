@@ -1,0 +1,12 @@
+{
+  "id": "2026-10-22-nt4efa",
+  "kind": "app",
+  "createdAt": "2026-10-22T11:16:53.543Z",
+  "reportedThread": null,
+  "coveredThreads": [],
+  "reportingThreadId": "f01aa465-743e-47ed-9a38-b5e2951aaa47",
+  "client": {
+    "surface": "desktop",
+    "connection": "primary"
+  }
+}

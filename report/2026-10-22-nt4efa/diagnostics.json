@@ -1,0 +1,24 @@
+{
+  "reportId": "2026-10-22-nt4efa",
+  "kind": "app",
+  "sslCode": {
+    "version": "1.0.30",
+    "commit": "d9abc4e97dd0",
+    "build": "packaged",
+    "serverMode": "desktop"
+  },
+  "client": {
+    "surface": "desktop",
+    "connection": "primary"
+  },
+  "os": {
+    "platform": "darwin",
+    "macOsVersion": "26.6.2",
+    "release": "25.6.0",
+    "arch": "arm64"
+  },
+  "proxy": {
+    "enabled": true
+  },
+  "reportedThread": null
+}

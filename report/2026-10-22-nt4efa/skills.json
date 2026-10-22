@@ -1,0 +1,588 @@
+{
+  "groups": [
+    {
+      "source": "ssl",
+      "folder": "/Applications/SSL Code.app/Contents/Resources/ssl-skills/skills",
+      "skills": [
+        {
+          "key": "ssl:ask-matt",
+          "name": "ask-matt",
+          "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:chief-of-staff",
+          "name": "chief-of-staff",
+          "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:claude-handoff",
+          "name": "claude-handoff",
+          "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:code-review",
+          "name": "code-review",
+          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\\"review since X\\\".",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:codebase-design",
+          "name": "codebase-design",
+          "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:diagnosing-bugs",
+          "name": "diagnosing-bugs",
+          "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:domain-modeling",
+          "name": "domain-modeling",
+          "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:git-guardrails-claude-code",
+          "name": "git-guardrails-claude-code",
+          "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:grill-me",
+          "name": "grill-me",
+          "description": "A relentless interview to sharpen a plan or design.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:grill-with-docs",
+          "name": "grill-with-docs",
+          "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:grilling",
+          "name": "grilling",
+          "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:handoff",
+          "name": "handoff",
+          "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:implement",
+          "name": "implement",
+          "description": "Implement a piece of work based on a spec or set of tickets.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:implement-spec",
+          "name": "implement-spec",
+          "description": "Implement the result of /to-spec and /to-tickets in code.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:improve-codebase-architecture",
+          "name": "improve-codebase-architecture",
+          "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:loop-me",
+          "name": "loop-me",
+          "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:migrate-to-shoehorn",
+          "name": "migrate-to-shoehorn",
+          "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:pr",
+          "name": "pr",
+          "description": "Use when writing a PR body.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:prototype",
+          "name": "prototype",
+          "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:report",
+          "name": "report",
+          "description": "Capture a problem with SSL Code or one of its threads as a report for SSL Code's maintainers, from a draft folder SSL Code prepared.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:research",
+          "name": "research",
+          "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:retro",
+          "name": "retro",
+          "description": "Conduct a retrospective on a coding session.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:scaffold-exercises",
+          "name": "scaffold-exercises",
+          "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:setup-matt-pocock-skills",
+          "name": "setup-matt-pocock-skills",
+          "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:setup-pre-commit",
+          "name": "setup-pre-commit",
+          "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:setup-ts-deep-modules",
+          "name": "setup-ts-deep-modules",
+          "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:tdd",
+          "name": "tdd",
+          "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:teach",
+          "name": "teach",
+          "description": "Teach the user a new skill or concept, within this workspace.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:to-questionnaire",
+          "name": "to-questionnaire",
+          "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:to-spec",
+          "name": "to-spec",
+          "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:to-tickets",
+          "name": "to-tickets",
+          "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:triage",
+          "name": "triage",
+          "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:wait-what",
+          "name": "wait-what",
+          "description": "Stop. That last message did not land: re-pitch it.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:wayfinder",
+          "name": "wayfinder",
+          "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:wizard",
+          "name": "wizard",
+          "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:writing-beats",
+          "name": "writing-beats",
+          "description": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:writing-for-agents",
+          "name": "writing-for-agents",
+          "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:writing-fragments",
+          "name": "writing-fragments",
+          "description": "Writing, explore: mine raw fragments, no structure yet.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "ssl:writing-shape",
+          "name": "writing-shape",
+          "description": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+          "default": true,
+          "global": null,
+          "project": null,
+          "overrides": []
+        }
+      ]
+    },
+    {
+      "source": "personal",
+      "folder": "/Users/tim/.claude/skills",
+      "skills": [
+        {
+          "key": "apple-design",
+          "name": "apple-design",
+          "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "find-skills",
+          "name": "find-skills",
+          "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "resolving-merge-conflicts",
+          "name": "resolving-merge-conflicts",
+          "description": "Use when you need to resolve an in-progress git merge/rebase conflict.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        }
+      ]
+    },
+    {
+      "source": "plugin",
+      "folder": "/Users/tim/.claude/plugins/cache/claude-plugins-official/figma/2.2.157/skills",
+      "plugin": "figma",
+      "skills": [
+        {
+          "key": "figma:figma-code-connect",
+          "name": "figma-code-connect",
+          "description": "Creates and maintains Figma Code Connect template files that map Figma components to code snippets. Use when the user mentions Code Connect, Figma component mapping, design-to-code translation, or asks to create/update .figma.ts or .figma.js files.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-code-workflows",
+          "name": "figma-code-workflows",
+          "description": "Import or upload local HTML or project files into Figma, choose editable Design frames, runnable Code Layers or standalone Code (also known as Make), and repair imported previews. Use only when the user explicitly names editable Design layers, a runnable Code Layer, or a standalone Code/Make file, or supplies a Figma file key/link as the import destination. Generic code or code-component requests need output clarification before using this workflow.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-create-new-file",
+          "name": "figma-create-new-file",
+          "description": "Always use this skill when the user wants to create a new Figma Design, FigJam, or Slides file. You MUST invoke this skill BEFORE every `create_new_file` tool call.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-design-to-code",
+          "name": "figma-design-to-code",
+          "description": "**MANDATORY prerequisite** — you MUST invoke this skill BEFORE calling the `get_design_context` Figma MCP tool. You MUST trigger this skill whenever the user wants to implement, build, port, or code up a Figma design as code. Example prompts (not exhaustive) are 'implement this Figma design', 'build this screen from Figma', 'turn this Figma into code', 'design to code'. This skill provides critical instructions and steps to the agent on how to correctly implement Figma designs in code and must NOT be skipped.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-generate-design",
+          "name": "figma-generate-design",
+          "description": "Use this skill alongside figma-use when the task involves translating an application page, view, or multi-section layout into Figma. Triggers: 'write to Figma', 'create in Figma from code', 'push page to Figma', 'take this app/page and build it in Figma', 'create a screen', 'build a landing page in Figma', 'update the Figma screen to match code', 'convert this modal/dialog/drawer/panel to Figma'. This is the preferred workflow skill whenever the user wants to build or update a full page, modal, dialog, drawer, sidebar, panel, form, dashboard, list, table, card, header, message preview, or other composed product UI in Figma from code or a description—even when the user calls that composed UI a component. Discovers design system components, variables, and styles from Code Connect files, existing screens, and library search, then imports them and assembles views incrementally section-by-section using design system tokens instead of hardcoded values.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-generate-diagram",
+          "name": "figma-generate-diagram",
+          "description": "MANDATORY prerequisite — load this skill BEFORE every `generate_diagram` tool call. NEVER call `generate_diagram` directly without loading this skill first. Trigger whenever the user asks to create, generate, draw, render, sketch, or build a diagram — flowchart, architecture diagram, sequence diagram, ERD or entity-relationship diagram, state diagram or state machine, gantt chart, or timeline. Also trigger when the user mentions Mermaid syntax or wants a system architecture, decision tree, dependency graph, API call flow, auth handshake, schema, or pipeline visualized in FigJam. Routes to type-specific guidance, sets universal Mermaid constraints, and tells you when to use a different diagram type or skip the tool entirely (mindmaps, pie charts, class diagrams, etc.).",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-generate-library",
+          "name": "figma-generate-library",
+          "description": "Build or update a professional-grade design system in Figma from a codebase. Use when the user wants to create variables/tokens, build component libraries, create individual components with proper variant sets and variable bindings, set up theming (light/dark modes), document foundations, or reconcile gaps between code and Figma. Also use when the user asks to create or generate any component in Figma — even a single one — since components require proper variable foundations, variant states, and design token bindings to be production-quality. This skill teaches WHAT to build and in WHAT ORDER — it complements the `figma-use` skill which teaches HOW to call the Plugin API. Both skills should be loaded together.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-generative-plugins",
+          "name": "figma-generative-plugins",
+          "description": "**MANDATORY prerequisite** — load this skill before calling `create_generative_plugin` or `update_generative_plugin`. Use when the user asks to create, author, change, fix, or extend a reusable generative Figma plugin.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-implement-motion",
+          "name": "figma-implement-motion",
+          "description": "Translates Figma motion and animations into production-ready application code. Use when implementing animation/motion from a Figma design — user mentions \"implement this motion\", \"add animation from Figma\", \"animate this component\", provides a Figma URL whose node is animated, or when `get_design_context` returns motion data or instructs you to call `get_motion_context`.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-shaders",
+          "name": "figma-shaders",
+          "description": "**MANDATORY prerequisite** — load this skill before calling `create_shader` or `update_shader`. Use when the user asks to create, author, change, fix, or iterate on a shader effect, shader fill, custom effect, custom fill, or procedural shader in Figma.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-spec",
+          "name": "figma-spec",
+          "description": "This skill is required to create, read, edit, review, or comment on Figma specs. You must read it when working on a PRD, brief, RFC or any kind of document in either a standalone Figma spec or a Figma spec embedded in a Figma Design or Figjam file.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-swiftui",
+          "name": "figma-swiftui",
+          "description": "SwiftUI ↔ Figma translation. Use whenever the user mentions Swift, SwiftUI, iOS, iPhone, or iPad — in EITHER direction — translating a Figma design into SwiftUI (design → code), or pushing SwiftUI views / screens / tokens back into a Figma file (code → design). Triggers on phrases like 'implement this Figma design in SwiftUI', 'build this screen in Swift', 'push this SwiftUI view to Figma', 'mirror my Swift code in a Figma file', or whenever a Figma URL appears alongside `.swift` files / an `.xcodeproj`. Routes to a direction-specific reference doc; loads alongside `figma-use` for the code → design path.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-use",
+          "name": "figma-use",
+          "description": "**MANDATORY prerequisite** — you MUST invoke this skill BEFORE every `use_figma` tool call. NEVER call `use_figma` directly without loading this skill first. Skipping it causes common, hard-to-debug failures. Trigger whenever the user wants to perform a write action or a unique read action that requires JavaScript execution in the Figma file context — e.g. create/edit/delete nodes, set up variables or tokens, build components and variants, modify auto-layout or fills, bind variables to properties, or inspect file structure programmatically.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-use-figjam",
+          "name": "figma-use-figjam",
+          "description": "This skill helps agents use Figma's use_figma MCP tool in the FigJam context. Can be used alongside figma-use which has foundational context for using the use_figma tool.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-use-motion",
+          "name": "figma-use-motion",
+          "description": "Motion / animation context for the `use_figma` MCP tool — animating Figma nodes via manual keyframes, animation styles, easing, and timeline duration. Load alongside figma-use whenever a task involves adding, editing, or inspecting animation on a node. Also covers working with custom animation styles.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "figma:figma-use-slides",
+          "name": "figma-use-slides",
+          "description": "This skill helps agents use Figma's use_figma MCP tool in the Slides context. Can be used alongside figma-use which has foundational context for using the use_figma tool.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        }
+      ]
+    },
+    {
+      "source": "plugin",
+      "folder": "/Users/tim/.claude/plugins/cache/mobbin/mobbin/1.4.0/skills",
+      "plugin": "mobbin",
+      "skills": [
+        {
+          "key": "mobbin:best-practices",
+          "name": "best-practices",
+          "description": "Tells your agent what Mobbin can and can't do and how the Mobbin skills work together, so it picks the right one or says when Mobbin isn't the right tool. Read it first, before any other Mobbin skill or tools, when the user asks about Mobbin or its connection, or starts a design task Mobbin could help with, including one that's too big or outside what Mobbin does.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "mobbin:plain-writing",
+          "name": "plain-writing",
+          "description": "Makes every report a Mobbin skill writes read like a person wrote it, in plain interface terms. Use only when a Mobbin skill writes prose for the user or asks for this skill by name; not for writing outside Mobbin skills. Removes the tells of AI-generated writing (em dashes, puffery, design buzzwords, rule-of-three, sign-offs) without changing a fact or adding one.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "mobbin:redesign-screen",
+          "name": "redesign-screen",
+          "description": "Redesign any screen from patterns real apps ship. Share a screenshot, your code or a design file, and the skill finds how apps on Mobbin handle the same screen. Explore a few directions or fix specific problems, and see the evidence behind each change. You get a before and after image and a short report. The redesign stays in your own design system, and anything that already works is kept. Use whenever the user points at a screen, section, or component they have, or at a reference or Mobbin result, and asks to redesign, improve, restyle, or rebuild it, or to see a few directions for it.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        },
+        {
+          "key": "mobbin:search",
+          "name": "search",
+          "description": "Gets better results from every Mobbin search, so the references match what you're working on. Use before every call to search_screens, search_flows or search_sections. Covers the tool and mode, writing an effective query, pulling more results, and what to do when a search falls short.",
+          "default": false,
+          "global": null,
+          "project": null,
+          "overrides": []
+        }
+      ]
+    }
+  ]
+}
